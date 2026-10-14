@@ -7,7 +7,7 @@ Its emergency detection is a prototype safeguard only.
 This is a **solo educational portfolio project** for learning NLP, Python, and Streamlit. It is experimental and not production-ready.
 **No clinician has reviewed any part of it**; any curated answers are educational content written by the developer without clinical review.
 
-> **Status:** Step 2 of 7 (dataset audit). No retrieval, safety, or UI code yet.
+> **Status:** Step 3 of 7 (cleaned dataset copy). No retrieval, safety, or UI code yet.
 > See [docs/DECISIONS.md](docs/DECISIONS.md) for approved decisions and [docs/](docs/) for the planning pack.
 
 ## Setup (Windows, Python 3.12)
@@ -35,6 +35,14 @@ Place the original `Doctor-HealthCare-100k.csv` in `data/raw/` and **do not edit
 ```
 
 Reads the raw CSV read-only (SHA-256 checked before and after) and writes aggregated statistics to `reports/dataset_audit.json` and `reports/dataset_audit.md`. No dataset text or personal data is written to the reports. Takes about 4 minutes.
+
+## Dataset cleaning
+
+```bash
+.venv\Scripts\python.exe scripts\run_cleaning.py
+```
+
+Writes `data/processed/querymate_clean.parquet` plus `cleaning_log.json` / `cleaning_log.md` (about 2 minutes). Only technical, meaning-preserving cleaning is applied; no rows are deleted, and every row keeps its `source_row` index and hashes of the original text. The cleaned data is for retrieval experiments only: **no answer is approved for display** (`display_allowed` is always False).
 
 ## Project layout
 

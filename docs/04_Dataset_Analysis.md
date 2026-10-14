@@ -107,20 +107,22 @@ Before sharing the dataset or deploying a model trained on it:
 - Confirm whether redistribution, derivative datasets, and commercial use are permitted.
 - Do not assume that availability on Kaggle means unrestricted use.
 
-## 10. Analysis results template
-Complete these values after running the audit:
+## 10. Analysis results
+Measured by `scripts/run_audit.py` (audit v1.0.0) and `scripts/run_cleaning.py` (cleaning v1.0.0) on 2026-10-13/14. Full details: `reports/dataset_audit.md` and `data/processed/cleaning_log.md` (both generated, not committed).
 | Metric | Result |
 |---|---|
-| Total rows | 112156 |
-| Total columns | 3 |
-| Missing questions | To measure |
-| Missing answers | To measure |
+| Total rows | 112,156 |
+| Total columns | 3 (`instruction`, `input`, `output`); `instruction` is a single constant value |
+| Missing questions | 0 (no empty or whitespace-only values) |
+| Missing answers | 0 |
 | Exact duplicate rows | 0 |
-| Duplicate questions | To measure |
-| Records removed | To measure |
-| Language profile | To confirm |
-| License verified | Yes/No + evidence |
-| Safety review sample size | To record |
+| Duplicate questions | 154 exact, 217 normalised; 72 groups (289 rows), all with differing answers |
+| Records removed | 0 deleted. 596 rows not retrieval-eligible: 554 unusable questions (E1), 42 duplicate questions (E2) |
+| Technical transformations | Escape decoding (3,416 rows), typographic normalisation (2,829), whitespace (49,647), email/URL redaction (330) |
+| Rows approved for display | 0 (D-01) |
+| Language profile | All ASCII in source; heuristic English check only (486 questions lack common English words) |
+| License verified | No, still pending (D-08) |
+| Safety review sample size | Not yet performed (non-clinical self-review planned; no clinician available, D-11) |
 
 ## 11. Deliverables
 - Dataset profiling notebook/script.

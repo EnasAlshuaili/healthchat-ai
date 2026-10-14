@@ -19,6 +19,8 @@ Decisions approved by the project owner. Record new decisions and changes here (
 | D-11 | 2026-10-13 | Solo educational portfolio project; **no clinician reviewer is available**, and development is not blocked by this. Curated answers are written/reviewed by the developer and labelled as educational content that has not undergone clinical review. No claims of clinical validation, medical accuracy, or production readiness. Work proceeds in small steps with owner review between steps. | Resolves the D-01 reviewer question. See 01_BRD §5, §11 and 07_Safety §1.1. |
 | D-12 | 2026-10-13 | Dataset audit (step 2) uses Python `re` for all pattern matching (not the pandas/Arrow RE2 engine) and reports aggregated counts only; no dataset text or matched personal data is written to reports. | Consistent regex semantics; privacy (BR-08). |
 
+| D-13 | 2026-10-14 | Cleaning (step 3) applies only technical transformations: escape decoding, typographic and whitespace normalisation, NFC, and email/URL redaction. No rows are deleted; unusable or duplicate questions are marked as not retrieval-eligible (E1/E2). Every row keeps `source_row` and hashes of its original text. "Chat Doctor" placeholders, medical wording, truncation, and conflicting answers are flagged, never rewritten or merged. `display_allowed` is False for all rows. | FR-03, D-01, D-08; owner's step 3 requirements. |
+
 ## Open items
 - Review-record format for curated answers (fields such as topic, text, sources consulted, reviewer, date, "not clinically reviewed" label). To be defined before step 5/6.
 - Dataset Kaggle URL, author, license and download date (D-08).
