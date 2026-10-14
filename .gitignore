@@ -1,0 +1,50 @@
+# --- Secrets ---
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# --- Data (license/provenance unverified; never commit dataset content) ---
+data/raw/*
+data/processed/*
+data/index/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/index/.gitkeep
+*.csv
+*.parquet
+*.pkl
+*.joblib
+*.npy
+*.npz
+# Explicitly allow hand-written evaluation sets (contain no dataset content)
+!eval/*.csv
+
+# Original documentation archive (kept unchanged, duplicate of docs/)
+*.zip
+
+# --- Generated reports that may quote dataset text ---
+reports/*
+!reports/.gitkeep
+
+# --- Logs (may contain user health text) ---
+*.log
+logs/
+
+# --- Python ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

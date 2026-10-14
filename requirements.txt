@@ -1,0 +1,10 @@
+# QueryMate MVP dependencies (Python 3.12). Versions verified in .venv on 2026-10-13.
+# No LLM, embedding, or external AI service packages are included by design (see docs/DECISIONS.md).
+pandas==3.0.6
+numpy==2.5.4
+scikit-learn==1.9.1
+scipy==1.18.1
+joblib==1.6.0
+pyarrow==25.0.1
+streamlit==1.65.0
+pytest==9.1.1

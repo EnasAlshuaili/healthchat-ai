@@ -1,0 +1,54 @@
+{
+  "project": "QueryMate: AI Healthcare Question Answering Chatbot",
+  "document_count": 11,
+  "files": [
+    "README.md",
+    "01_BRD.md",
+    "02_SRS.md",
+    "03_System_Design.md",
+    "04_Dataset_Analysis.md",
+    "05_AI_NLP_Model_Report.md",
+    "06_UI_UX_Design.md",
+    "07_Safety_and_Risk_Assessment.md",
+    "08_Testing_Plan.md",
+    "09_Project_Plan.md",
+    "10_Final_Project_Report.md"
+  ],
+  "dataset_profile": {
+    "filename": "Doctor-HealthCare-100k.csv",
+    "rows": 112156,
+    "columns": [
+      "instruction",
+      "input",
+      "output"
+    ],
+    "missing": "To be measured during the dataset analysis phase",
+    "duplicates": "To be measured during the dataset analysis phase",
+    "language": "Expected to be primarily English; confirm during profiling",
+    "missing_by_column": {
+      "instruction": 0,
+      "input": 0,
+      "output": 0
+    },
+    "duplicate_rows": 0,
+    "file_size_mb": 120.19,
+    "sample_lengths": {
+      "instruction": {
+        "min": 92,
+        "median": 92.0,
+        "max": 92
+      },
+      "input": {
+        "min": 1,
+        "median": 351.0,
+        "max": 11188
+      },
+      "output": {
+        "min": 2,
+        "median": 558.0,
+        "max": 3304
+      }
+    }
+  },
+  "note": "Draft documentation. Verify open decisions and replace planned metrics with actual measurements."
+}
