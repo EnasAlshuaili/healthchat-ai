@@ -27,7 +27,7 @@ export function Brand() {
 
 export function SidebarContent({ view, onNavigate, onNewChat }: SidebarProps) {
   return (
-    <div className="flex h-full flex-col gap-6 p-5">
+    <div className="flex h-full flex-col gap-4 p-4">
       <Brand />
 
       <div>
@@ -65,7 +65,7 @@ export function SidebarContent({ view, onNavigate, onNewChat }: SidebarProps) {
         </ul>
       </nav>
 
-      <div className="mt-auto space-y-4">
+      <div className="mt-auto space-y-3">
         <SafetyNotice />
         <PrototypeBadge />
       </div>

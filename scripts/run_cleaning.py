@@ -1,4 +1,4 @@
-"""Create the cleaned, traceable copy of the QueryMate dataset.
+"""Create the cleaned, traceable copy of the HealthChat AI dataset.
 
 Usage (from the project root):
     .venv\\Scripts\\python.exe scripts\\run_cleaning.py [--input PATH] [--out-dir DIR]

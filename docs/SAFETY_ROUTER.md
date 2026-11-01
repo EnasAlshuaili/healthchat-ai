@@ -2,7 +2,7 @@
 
 **Current version: v0.1.1** (Validation-informed; see [v0.1.1](#v011-validation-informed-changes) at the end). The v0.1.0 sections below are kept as originally written. The frozen v0.1.0 rules are in `docs/safety_router_rules_v0.1.0.json`, whose SHA-256 is the v0.1.0 fingerprint.
 
-> **Prototype, not clinical triage.** The router uses keyword and pattern rules. It does **not** detect every emergency, crisis, diagnosis request, or medication request. It cannot tell whether anyone is safe, and it has **not** been clinically validated (D-07, D-11, `07_Safety_and_Risk_Assessment.md` §4). QueryMate remains an educational prototype.
+> **Prototype, not clinical triage.** The router uses keyword and pattern rules. It does **not** detect every emergency, crisis, diagnosis request, or medication request. It cannot tell whether anyone is safe, and it has **not** been clinically validated (D-07, D-11, `07_Safety_and_Risk_Assessment.md` §4). HealthChat AI remains an educational prototype.
 
 Code: `src/querymate/safety.py`. Tests: `tests/test_safety.py`. Validation baseline: `scripts/evaluate_safety_validation.py`.
 

@@ -1,7 +1,7 @@
 [project]
-name = "querymate"
+name = "healthchat-ai"
 version = "0.1.0"
-description = "Educational healthcare question-answering prototype (not a diagnostic or treatment tool)"
+description = "Educational Healthcare Q&A Chatbot: educational prototype, not clinically validated (not a diagnostic or treatment tool)"
 requires-python = ">=3.12,<3.13"
 
 [tool.pytest.ini_options]

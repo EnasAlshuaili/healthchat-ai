@@ -1,13 +1,17 @@
-# QueryMate — AI Healthcare Question Answering Chatbot
+# HealthChat AI — Educational Healthcare Q&A Chatbot
+
+*Your AI Assistant for General Health Education.*
 
 Educational prototype for **general healthcare information** in English.
-QueryMate is **not** a doctor and does **not** diagnose, prescribe, or provide clinically validated triage.
-Its emergency detection is a prototype safeguard only.
+HealthChat AI is **not** a doctor and does **not** diagnose, prescribe, or provide clinically validated triage.
+Its emergency detection is a prototype safeguard only. It has not been clinically validated.
 
 This is a **solo educational portfolio project** for learning NLP, Python, and Streamlit. It is experimental and not production-ready.
 **No clinician has reviewed any part of it**; curated answers are educational content reviewed by the project owner, without clinical review.
 
 > **Status:** Prototype components exist: a TF-IDF retrieval-ranking baseline (metadata only, no threshold selected), a curated-topic matcher (D-15), and a keyword-rule Safety & Scope Router v0.1.1 (D-17), each evaluated on the validation set only (provisional; not clinically validated). **The router and one curated topic are integrated:** the FastAPI backend sends every question through the router first. After `PROCEED` only, an exact lookup can return one owner-reviewed educational answer (hydration) with its sources; anything else gets the safe fallback (API contract v0.3, D-21). That answer has **not** been clinically reviewed or clinically validated. The topic matcher and the TF-IDF retrieval baseline are not connected; the router→matcher gate is unit-tested only. The React frontend (`frontend/`) calls this API through the local Vite dev proxy and shows the server's replies. The Streamlit UI is a mock-only preview with fixed placeholder replies and no backend connection (D-18). No dataset answer is approved for display (D-01).
+> Formerly named QueryMate. The `querymate` Python package, `QUERYMATE_*` environment variables, and internal file names keep the old name on purpose (D-22).
+>
 > See [docs/DECISIONS.md](docs/DECISIONS.md) for approved decisions and [docs/](docs/) for the planning pack.
 
 ## Setup (Windows, Python 3.12)

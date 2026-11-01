@@ -1,5 +1,5 @@
 # Project Plan & Timeline
-## QueryMate: AI Healthcare Question Answering Chatbot
+## HealthChat AI: Educational Healthcare Q&A Chatbot
 
 - **Version:** 1.0
 - **Status:** Proposed plan; dates to be confirmed

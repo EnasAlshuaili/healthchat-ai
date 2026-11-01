@@ -1,5 +1,5 @@
 # Testing & Evaluation Plan
-## QueryMate: AI Healthcare Question Answering Chatbot
+## HealthChat AI: Educational Healthcare Q&A Chatbot
 
 - **Version:** 1.0
 - **Status:** Planned; execute after implementation

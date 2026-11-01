@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* QueryMate palette: same values as .streamlit/config.toml (blue-and-white identity).
+/* HealthChat AI palette: same values as .streamlit/config.toml (blue-and-white identity).
    System font stack only: nothing is loaded from external font services. */
 @theme {
   --color-primary: #2563eb;

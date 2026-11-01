@@ -33,7 +33,7 @@ TELEMETRY_OFF = {
 
 def create_app() -> FastAPI:
     app = FastAPI(
-        title="QueryMate API",
+        title="HealthChat AI API",
         # Only the two contract endpoints exist. Swagger UI would also load assets from a CDN.
         docs_url=None,
         redoc_url=None,

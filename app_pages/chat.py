@@ -85,9 +85,9 @@ st.chat_input(
 messages = st.session_state.messages
 
 if not messages:
-    # Empty state: welcome, what QueryMate aims to do, and example questions.
+    # Empty state: welcome, what HealthChat AI aims to do, and example questions.
     st.badge("Educational prototype", icon=":material/school:", color="blue")
-    st.title("Hello! I'm QueryMate")
+    st.title("Hello! I'm HealthChat AI")
     st.markdown(content.WELCOME)
     st.info(content.MOCK_NOTICE, icon=":material/construction:")
 

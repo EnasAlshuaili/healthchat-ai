@@ -1,4 +1,4 @@
-# QueryMate Evaluation Sets (Draft)
+# HealthChat AI Evaluation Sets (Draft)
 
 > **Status: synthetic drafts.** Every question here was written from scratch for this project. The questions and their expected behaviors have **not** been clinically reviewed or clinically validated. No clinician is available to this solo educational project (D-11). The expected behaviors are a non-clinical self-review by the developer.
 

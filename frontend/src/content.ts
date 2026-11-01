@@ -1,11 +1,13 @@
 // Static interface copy. Mirrors src/querymate/ui/content.py (Streamlit) and
 // docs/06_UI_UX_Design.md so both UIs say the same thing.
 
-export const APP_NAME = "QueryMate";
+export const APP_NAME = "HealthChat AI";
+export const DESCRIPTION = "Educational Healthcare Q&A Chatbot";
+export const TAGLINE = "Your AI Assistant for General Health Education.";
 
 // Verbatim from docs/06_UI_UX_Design.md §2 "Disclaimer".
 export const DISCLAIMER =
-  "QueryMate provides general health information and is not a substitute for " +
+  "HealthChat AI provides general health information and is not a substitute for " +
   "professional medical advice, diagnosis, or treatment. If you think you may be " +
   "experiencing an emergency, contact local emergency services immediately.";
 
@@ -14,22 +16,22 @@ export const EMERGENCY_LINE =
   "If you think you may be experiencing an emergency, contact local emergency services immediately.";
 
 export const SAFETY_NOTICE =
-  "Do not use QueryMate for emergencies. If you think you or someone else may be " +
+  "Do not use HealthChat AI for emergencies. If you think you or someone else may be " +
   "in immediate danger, contact your local emergency services.";
 
 export const PROTOTYPE_NOTICE =
-  "QueryMate is a solo educational prototype. It is not a doctor, does not diagnose " +
+  "HealthChat AI is a solo educational prototype. It is not a doctor, does not diagnose " +
   "or prescribe, and has not been clinically reviewed or validated.";
 
 // Contract v0.3 (D-21): one curated topic; everything else gets a fixed message.
 export const SCOPE_NOTICE =
-  "QueryMate can answer only a small set of general questions, using educational " +
+  "HealthChat AI can answer only a small set of general questions, using educational " +
   "content reviewed by the project owner, not clinically reviewed. Each question first " +
   "goes through an automated, keyword-based safety check (a prototype, not clinical " +
   "triage). Anything else gets a fixed safety message or a safe fallback.";
 
 export const WELCOME =
-  "I'm QueryMate, an educational assistant for general healthcare information. " +
+  "I'm HealthChat AI, an educational assistant for general healthcare information. " +
   "What would you like to learn about today?";
 
 export const INPUT_PLACEHOLDER = "Ask a general health question…";
@@ -47,8 +49,8 @@ export const SERVICE_ERROR =
 // Headings for the error states. The body is always SERVICE_ERROR, which includes the
 // emergency line; no server or exception text is ever shown.
 export const ERROR_HEADINGS = {
-  unreachable: "QueryMate could not be reached",
-  unavailable: "QueryMate is unavailable",
+  unreachable: "HealthChat AI could not be reached",
+  unavailable: "HealthChat AI is unavailable",
   unreadable: "This reply could not be shown",
   unexpected: "Something went wrong",
 } as const;
@@ -64,7 +66,7 @@ export const SOURCES_HEADING = "Sources";
 // a kind or content_source this client does not know ("treat as safe_fallback").
 // Must match docs/API_CONTRACT.md exactly; checked by src/api/contract.test.ts.
 export const SAFE_FALLBACK_REPLY = {
-  title: "QueryMate can't answer this safely",
+  title: "HealthChat AI can't answer this safely",
   paragraphs: [
     "I couldn't find enough reliable information to answer this safely. Please rephrase " +
       "your question or consult a qualified healthcare professional.",
@@ -95,6 +97,6 @@ export const FEATURES = [
   },
   {
     title: "Honest about limits",
-    text: "When no reviewed content fits, QueryMate says so instead of guessing.",
+    text: "When no reviewed content fits, HealthChat AI says so instead of guessing.",
   },
 ] as const;

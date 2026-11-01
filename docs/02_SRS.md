@@ -1,12 +1,12 @@
 # Software Requirements Specification (SRS)
-## QueryMate: AI Healthcare Question Answering Chatbot
+## HealthChat AI: Educational Healthcare Q&A Chatbot
 
 - **Version:** 1.0
 - **Status:** Draft for review
 - **Related document:** `01_BRD.md`
 
 ## 1. Purpose
-Define observable system behavior and quality requirements for the QueryMate prototype.
+Define observable system behavior and quality requirements for the HealthChat AI prototype.
 
 ## 2. Product overview
 A web-based chatbot accepts an English healthcare question, checks input and risk indicators, retrieves relevant material from an approved local dataset/index, and returns a response or safe fallback. A generative model is optional and must be evaluated before inclusion.

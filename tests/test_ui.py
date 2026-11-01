@@ -123,7 +123,7 @@ def run_app() -> AppTest:
 
 def test_empty_state_shows_welcome_disclaimer_and_suggestions():
     at = run_app()
-    assert at.title[0].value == "Hello! I'm QueryMate"
+    assert at.title[0].value == "Hello! I'm HealthChat AI"
     assert any(content.DISCLAIMER in c.value for c in at.caption)
     assert any("Safety notice" in m.value for m in at.sidebar.markdown)
     assert any(content.MOCK_NOTICE == i.value for i in at.info)
@@ -179,7 +179,7 @@ def test_new_chat_clears_conversation():
     at.button(key="new_chat").click().run()
     assert not at.exception
     assert at.session_state["messages"] == []
-    assert at.title[0].value == "Hello! I'm QueryMate"
+    assert at.title[0].value == "Hello! I'm HealthChat AI"
 
 
 @pytest.mark.parametrize("page", ["app_pages/about.py", "app_pages/how_it_works.py"])

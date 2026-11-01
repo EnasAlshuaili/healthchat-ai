@@ -4,8 +4,8 @@ import streamlit as st
 
 from querymate.ui import content
 
-st.title("About QueryMate")
-st.markdown("An educational chatbot prototype for general healthcare information.")
+st.title("About HealthChat AI")
+st.markdown(f"{content.DESCRIPTION}. {content.TAGLINE}")
 st.info(content.PROTOTYPE_NOTICE, icon=":material/school:")
 
 with st.container(horizontal=True):

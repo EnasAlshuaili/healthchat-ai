@@ -1,5 +1,5 @@
 # UI/UX Design Specification
-## QueryMate: AI Healthcare Question Answering Chatbot
+## HealthChat AI: Educational Healthcare Q&A Chatbot
 
 - **Version:** 1.0
 - **Status:** Proposed interface specification
@@ -14,8 +14,8 @@
 
 ## 2. Main screen layout
 ### Header
-- Product name: QueryMate.
-- Subtitle: “AI-powered general healthcare information.”
+- Product name: HealthChat AI.
+- Subtitle: “Your AI Assistant for General Health Education.”
 - Optional status label: “Educational prototype.”
 
 ### Main chat area
@@ -33,7 +33,7 @@
 
 ### Disclaimer
 Display near the chat, not only in a separate page:
-“QueryMate provides general health information and is not a substitute for professional medical advice, diagnosis, or treatment. If you think you may be experiencing an emergency, contact local emergency services immediately.”
+“HealthChat AI provides general health information and is not a substitute for professional medical advice, diagnosis, or treatment. If you think you may be experiencing an emergency, contact local emergency services immediately.”
 
 ## 3. Key user journeys
 ### Journey A — General health question
@@ -58,7 +58,7 @@ Display near the chat, not only in a separate page:
 
 ## 4. Suggested copy
 ### Welcome
-“Hello! I’m QueryMate, an AI assistant for general healthcare information. What would you like to learn about today?”
+“Hello! I’m HealthChat AI, an AI assistant for general healthcare information. What would you like to learn about today?”
 
 ### Loading
 “Looking for relevant information…”

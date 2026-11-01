@@ -47,12 +47,12 @@ export function Composer({ onSend, pending }: ComposerProps) {
   }
 
   return (
-    <div className="border-t border-line bg-white/95 px-4 pt-3 pb-4 backdrop-blur sm:px-6">
+    <div className="border-t border-line bg-white/95 px-4 pt-2 pb-2 backdrop-blur sm:px-6">
       <form onSubmit={handleSubmit} className="mx-auto max-w-3xl">
         <label htmlFor={inputId} className="sr-only">
           Your question
         </label>
-        <div className="flex items-end gap-2 rounded-2xl border border-line bg-white p-2 shadow-sm focus-within:border-primary focus-within:ring-2 focus-within:ring-primary/20">
+        <div className="flex items-end gap-2 rounded-2xl border border-line bg-white p-1 shadow-sm focus-within:border-primary focus-within:ring-2 focus-within:ring-primary/20">
           <textarea
             id={inputId}
             value={draft}
@@ -74,7 +74,7 @@ export function Composer({ onSend, pending }: ComposerProps) {
           </button>
         </div>
 
-        <div id={hintId} className="mt-1.5 flex flex-wrap items-start justify-between gap-x-4 gap-y-1 px-1 text-xs">
+        <div id={hintId} className="mt-1 flex flex-wrap items-start justify-between gap-x-4 gap-y-0.5 px-1 text-xs">
           <p aria-live="polite" className={overHard ? "font-medium text-red-700" : overSoft ? "font-medium text-amber-800" : "sr-only"}>
             {overHard
               ? `This message is too long to send (limit ${HARD_LIMIT_CHARS.toLocaleString("en")} characters).`
@@ -87,8 +87,8 @@ export function Composer({ onSend, pending }: ComposerProps) {
           </p>
         </div>
 
-        <p className="mt-2 flex items-start gap-1.5 px-1 text-xs leading-relaxed text-muted">
-          <InfoIcon className="mt-px size-3.5 shrink-0" />
+        <p className="mt-0.5 flex items-start gap-1.5 px-1 text-xs leading-snug text-muted">
+          <InfoIcon className="size-3.5 shrink-0" />
           <span>
             {DISCLAIMER} {PRIVACY_HINT}
           </span>

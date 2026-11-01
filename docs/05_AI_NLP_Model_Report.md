@@ -1,5 +1,5 @@
 # AI / NLP Model Development Report
-## QueryMate: AI Healthcare Question Answering Chatbot
+## HealthChat AI: Educational Healthcare Q&A Chatbot
 
 - **Version:** 1.0
 - **Status:** Experiment plan; no model results should be assumed yet.

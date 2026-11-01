@@ -16,7 +16,7 @@ export function SafetyNotice({ compact = false }: { compact?: boolean }) {
   return (
     <section
       aria-labelledby="safety-notice-heading"
-      className="rounded-2xl border border-red-200 bg-red-50 p-4 text-red-900"
+      className="rounded-xl border border-red-200 bg-red-50 p-3 text-red-900"
     >
       <h2 id="safety-notice-heading" className="flex items-center gap-2 text-sm font-semibold">
         <AlertIcon className="size-4 text-red-700" />

@@ -1,7 +1,7 @@
-# QueryMate — AI Healthcare Question Answering Chatbot
+# HealthChat AI — Educational Healthcare Q&A Chatbot
 ## Project Documentation Pack
 
-This folder contains the core planning, design, data, AI, safety, testing, and delivery documents for **QueryMate**, an English-language AI healthcare question-answering prototype.
+This folder contains the core planning, design, data, AI, safety, testing, and delivery documents for **HealthChat AI**, an English-language AI healthcare question-answering prototype.
 
 ## Files
 1. `01_BRD.md` — business needs, goals, scope, stakeholders, and success measures.
@@ -16,7 +16,7 @@ This folder contains the core planning, design, data, AI, safety, testing, and d
 10. `10_Final_Project_Report.md` — final report template to complete after implementation and evaluation.
 
 ## Project facts currently known
-- Project name: **QueryMate: AI Healthcare Question Answering Chatbot**
+- Project name: **HealthChat AI: Educational Healthcare Q&A Chatbot**
 - Primary dataset: `Doctor-HealthCare-100k.csv` (Kaggle dataset)
 - Intended initial language: English
 - Prototype direction: begin with retrieval-based NLP, then evaluate whether semantic embeddings/RAG are justified.

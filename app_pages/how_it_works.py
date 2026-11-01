@@ -3,7 +3,7 @@
 import streamlit as st
 
 st.title("How it works")
-st.markdown("How QueryMate is designed to handle a question once the interface is connected.")
+st.markdown("How HealthChat AI is designed to handle a question once the interface is connected.")
 st.warning(
     "**Not connected yet.** In this UI preview, none of the steps below run. "
     "Replies are labelled mock placeholders.",
@@ -37,7 +37,7 @@ with st.container(horizontal=True):
             st.markdown(f"**{title}**")
             st.caption(text)
 
-st.subheader("What QueryMate will not do")
+st.subheader("What HealthChat AI will not do")
 st.markdown(
     "- Show raw answers from the original dataset.\n"
     "- Diagnose conditions, recommend medicines, or suggest doses.\n"

@@ -1,4 +1,4 @@
-"""QueryMate Streamlit entry point (UI-only preview).
+"""HealthChat AI Streamlit entry point (UI-only preview).
 
 Usage (from the project root):
     .venv\\Scripts\\python.exe -m streamlit run app.py

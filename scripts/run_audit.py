@@ -1,4 +1,4 @@
-"""Reproducible, read-only audit of the original QueryMate dataset.
+"""Reproducible, read-only audit of the original HealthChat AI dataset.
 
 Usage (from the project root):
     .venv\\Scripts\\python.exe scripts\\run_audit.py [--input PATH] [--out-dir DIR]

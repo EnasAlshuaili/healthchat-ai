@@ -1,4 +1,4 @@
-# QueryMate API Contract
+# HealthChat AI API Contract
 
 **Contract version: v0.3 (approved by the project owner, 2026-10-31; D-21). Implemented in `curated_single_topic` mode** by `src/querymate/api/`, which delegates every question to `src/querymate/pipeline.py` (tests: `tests/test_api.py`, `tests/test_pipeline.py`, `tests/test_knowledge.py`). v0.2 (`router_only`) and v0.1 (`mock`) are superseded; see [Changes from v0.2](#changes-from-v02) and [Superseded v0.1](#superseded-v01).
 
@@ -94,7 +94,7 @@ Returned for every outcome the server decides, including `invalid_input` and fai
   "is_mock": false,
   "abstained": false,
   "abstain_reason": null,
-  "disclaimer": "QueryMate provides general health information and is not a substitute for professional medical advice, diagnosis, or treatment. If you think you may be experiencing an emergency, contact local emergency services immediately.",
+  "disclaimer": "HealthChat AI provides general health information and is not a substitute for professional medical advice, diagnosis, or treatment. If you think you may be experiencing an emergency, contact local emergency services immediately.",
   "versions": { "router": "0.1.1", "matcher": null, "content": "templates-0.1", "knowledge": "0.1.0" }
 }
 ```
@@ -154,33 +154,33 @@ Approved wording (D-20, `templates-0.1`). Each paragraph below is one entry in `
 **`emergency`**: title "Possible emergency"
 
 1. If you or someone else may be in immediate danger, contact local emergency services immediately.
-2. QueryMate is an educational prototype and cannot provide crisis intervention or assess immediate safety. Do not wait for a response from QueryMate if urgent help may be needed.
+2. HealthChat AI is an educational prototype and cannot provide crisis intervention or assess immediate safety. Do not wait for a response from HealthChat AI if urgent help may be needed.
 
 **`crisis`**: title "Please get help now"
 
 1. If you or someone else may be in immediate danger, contact local emergency services immediately.
-2. QueryMate is an educational prototype and cannot provide crisis intervention or assess immediate safety. Do not wait for a response from QueryMate if urgent help may be needed.
+2. HealthChat AI is an educational prototype and cannot provide crisis intervention or assess immediate safety. Do not wait for a response from HealthChat AI if urgent help may be needed.
 3. If you are thinking about harming yourself, please reach out to someone you trust who can support you now. If you or someone else may have taken too much of a medicine or other substance, seek emergency help immediately. If possible, stay with someone you trust while getting help.
 
-**`decline_diagnosis`**: title "QueryMate can't diagnose"
+**`decline_diagnosis`**: title "HealthChat AI can't diagnose"
 
-1. QueryMate is an educational prototype and cannot diagnose conditions or say what may be causing symptoms.
+1. HealthChat AI is an educational prototype and cannot diagnose conditions or say what may be causing symptoms.
 2. Please talk to a doctor or another qualified healthcare professional, who can assess your situation. If symptoms are severe, getting worse, or worrying you, seek professional care.
 3. If you think you may be experiencing an emergency, contact local emergency services immediately.
 
-**`decline_dosage`**: title "QueryMate can't advise on medicines or doses"
+**`decline_dosage`**: title "HealthChat AI can't advise on medicines or doses"
 
-1. QueryMate is an educational prototype and cannot recommend medicines, suggest doses, or advise on starting, stopping, changing, or combining medicines.
+1. HealthChat AI is an educational prototype and cannot recommend medicines, suggest doses, or advise on starting, stopping, changing, or combining medicines.
 2. For questions about medicines, please ask a pharmacist, your prescriber, or another qualified healthcare professional, or check the official information leaflet that comes with the medicine.
 3. If you think you may be experiencing an emergency, contact local emergency services immediately.
 
-**`out_of_scope`**: title "This question is outside what QueryMate covers"
+**`out_of_scope`**: title "This question is outside what HealthChat AI covers"
 
-1. QueryMate only provides general educational information about human health topics, so it can't help with this question.
+1. HealthChat AI only provides general educational information about human health topics, so it can't help with this question.
 2. Please try a general health question, or ask a suitable professional or service about this topic.
 3. If you think you may be experiencing an emergency, contact local emergency services immediately.
 
-**`safe_fallback`**: title "QueryMate can't answer this safely"
+**`safe_fallback`**: title "HealthChat AI can't answer this safely"
 
 1. I couldn't find enough reliable information to answer this safely. Please rephrase your question or consult a qualified healthcare professional.
 2. If you think you may be experiencing an emergency, contact local emergency services immediately.
@@ -196,7 +196,7 @@ Approved wording (D-20, `templates-0.1`). Each paragraph below is one entry in `
 
 **`mock_answer`**: title "Mock response: answers are not available yet"
 
-1. This is a placeholder. QueryMate's answer system is not connected, so your question has not been checked or answered.
+1. This is a placeholder. HealthChat AI's answer system is not connected, so your question has not been checked or answered.
 2. For health concerns, please consult a qualified healthcare professional. If you think you may be experiencing an emergency, contact local emergency services immediately.
 
 Caveats recorded with the approval (D-20): `decline_diagnosis` does not decide whether "prompt" evaluation is required; `decline_dosage` deliberately does not tell users to keep taking or stop a medicine; "human health" in `out_of_scope` settles reply wording only, not evaluation conventions; the `safe_fallback` wording (06 §4) fits rule-override and certainty-demand cases imperfectly.

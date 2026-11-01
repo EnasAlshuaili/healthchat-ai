@@ -1,5 +1,5 @@
 # Business Requirements Document (BRD)
-## QueryMate: AI Healthcare Question Answering Chatbot
+## HealthChat AI: Educational Healthcare Q&A Chatbot
 
 - **Version:** 1.0
 - **Status:** Draft for review
@@ -7,10 +7,10 @@
 - **Primary dataset:** `Doctor-HealthCare-100k.csv`
 
 ## 1. Executive summary
-QueryMate is an AI-powered conversational prototype intended to answer general healthcare questions in understandable English. It will use a healthcare question-and-answer dataset and NLP-based retrieval, with a possible retrieval-augmented generation (RAG) approach if evaluation supports it. It must clearly communicate its limitations and direct users to professional care when appropriate.
+HealthChat AI is an AI-powered conversational prototype intended to answer general healthcare questions in understandable English. It will use a healthcare question-and-answer dataset and NLP-based retrieval, with a possible retrieval-augmented generation (RAG) approach if evaluation supports it. It must clearly communicate its limitations and direct users to professional care when appropriate.
 
 ## 2. Business problem
-Users may encounter fragmented, confusing, or conflicting healthcare information online. A conversational interface can make general health information easier to access, but inaccurate or overconfident medical responses can cause harm. QueryMate therefore prioritizes understandable answers, uncertainty handling, privacy, and safety over answering every question.
+Users may encounter fragmented, confusing, or conflicting healthcare information online. A conversational interface can make general health information easier to access, but inaccurate or overconfident medical responses can cause harm. HealthChat AI therefore prioritizes understandable answers, uncertainty handling, privacy, and safety over answering every question.
 
 ## 3. Vision
 Provide accessible, understandable, and safety-aware general healthcare information through a conversational AI assistant.

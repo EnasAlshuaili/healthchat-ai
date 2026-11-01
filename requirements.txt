@@ -1,4 +1,4 @@
-# QueryMate MVP dependencies (Python 3.12). Versions verified in .venv on 2026-10-13.
+# HealthChat AI MVP dependencies (Python 3.12). Versions verified in .venv on 2026-10-13.
 # No LLM, embedding, or external AI service packages are included by design (see docs/DECISIONS.md).
 pandas==3.0.6
 numpy==2.5.4

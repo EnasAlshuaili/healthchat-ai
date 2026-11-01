@@ -1,5 +1,5 @@
 # Healthcare Safety & Risk Assessment
-## QueryMate: AI Healthcare Question Answering Chatbot
+## HealthChat AI: Educational Healthcare Q&A Chatbot
 
 - **Version:** 1.0
 - **Status:** Initial risk register; requires ongoing review
@@ -8,7 +8,7 @@
 Provide general, educational healthcare information in response to text questions. The prototype is not intended to diagnose, prescribe, replace clinical judgment, or manage emergencies.
 
 ### 1.1 Project context and review limitations
-- QueryMate is a **solo educational portfolio project**. It is experimental and **not production-ready**.
+- HealthChat AI is a **solo educational portfolio project**. It is experimental and **not production-ready**.
 - **No clinician reviewer is available.** No clinical review of the dataset, curated answers, safety rules, or test results has taken place.
 - All reviews (dataset sampling, curated answers, safety test outcomes) are **non-clinical self-reviews by the developer**, recorded with reviewer and date.
 - Raw dataset answers are never presented as trusted medical advice. Only curated answer text is displayed, and each curated entry must carry the label: *"Educational content written/reviewed by the developer. It has not undergone clinical review."*

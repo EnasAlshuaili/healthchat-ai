@@ -1,5 +1,5 @@
 # Dataset Analysis & Preparation Report
-## QueryMate: AI Healthcare Question Answering Chatbot
+## HealthChat AI: Educational Healthcare Q&A Chatbot
 
 - **Source file:** `Doctor-HealthCare-100k.csv`
 - **Status:** Initial automated profile where available; full content/medical-quality audit remains required.

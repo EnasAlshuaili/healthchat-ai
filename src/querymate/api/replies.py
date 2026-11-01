@@ -28,7 +28,7 @@ EMERGENCY_LINE = (
 _MOCK_ANSWER = Message(
     title="Mock response: answers are not available yet",
     paragraphs=[
-        "This is a placeholder. QueryMate's answer system is not connected, so your "
+        "This is a placeholder. HealthChat AI's answer system is not connected, so your "
         "question has not been checked or answered.",
         "For health concerns, please consult a qualified healthcare professional. "
         + EMERGENCY_LINE,

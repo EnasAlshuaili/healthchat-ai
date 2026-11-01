@@ -1,4 +1,4 @@
-import { DISCLAIMER, PROTOTYPE_NOTICE } from "../content";
+import { DESCRIPTION, DISCLAIMER, PROTOTYPE_NOTICE, TAGLINE } from "../content";
 import { InfoIcon } from "./Icons";
 
 const STEPS = [
@@ -15,19 +15,19 @@ const STEPS = [
 
 export function About() {
   return (
-    <div className="space-y-8">
-      <div className="space-y-3">
-        <h1 className="text-3xl font-bold tracking-tight">About QueryMate</h1>
+    <div className="space-y-5">
+      <div className="space-y-2">
+        <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">About HealthChat AI</h1>
         <p className="text-base leading-relaxed text-muted">
-          An educational chatbot prototype for general healthcare information.
+          {DESCRIPTION}. {TAGLINE}
         </p>
-        <p role="note" className="flex items-start gap-2.5 rounded-2xl border border-line bg-tint p-4 text-sm leading-relaxed">
+        <p role="note" className="flex items-start gap-2.5 rounded-xl border border-line bg-tint px-4 py-3 text-sm leading-relaxed">
           <InfoIcon className="mt-0.5 size-5 shrink-0 text-primary" />
           {PROTOTYPE_NOTICE}
         </p>
       </div>
 
-      <section aria-labelledby="how-heading" className="space-y-3">
+      <section aria-labelledby="how-heading" className="space-y-2">
         <h2 id="how-heading" className="text-lg font-semibold">
           How it is designed to work
         </h2>
@@ -38,12 +38,14 @@ export function About() {
         </p>
         <ol className="grid gap-3 sm:grid-cols-3">
           {STEPS.map(([title, text], i) => (
-            <li key={title} className="rounded-2xl border border-line bg-white p-4 shadow-sm">
-              <span className="flex size-8 items-center justify-center rounded-full bg-tint text-sm font-bold text-primary">
-                {i + 1}
-              </span>
-              <p className="mt-3 text-sm font-semibold">{title}</p>
-              <p className="mt-1 text-sm leading-relaxed text-muted">{text}</p>
+            <li key={title} className="rounded-xl border border-line bg-white p-3 shadow-sm">
+              <div className="flex items-center gap-2">
+                <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-tint text-sm font-bold text-primary">
+                  {i + 1}
+                </span>
+                <p className="text-sm font-semibold">{title}</p>
+              </div>
+              <p className="mt-1.5 text-sm leading-relaxed text-muted">{text}</p>
             </li>
           ))}
         </ol>
@@ -56,7 +58,7 @@ export function About() {
         <ul className="list-disc space-y-1 pl-5 text-sm leading-relaxed">
           <li>Chats stay in this browser tab and are never saved.</li>
           <li>No questions are sent to external AI services.</li>
-          <li>Questions go only to the local QueryMate service on this computer, which does not store them.</li>
+          <li>Questions go only to the local HealthChat AI service on this computer, which does not store them.</li>
         </ul>
       </section>
 

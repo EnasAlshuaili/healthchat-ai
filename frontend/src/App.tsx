@@ -130,7 +130,7 @@ export default function App({ client = defaultClient }: { client?: ChatClient })
       )}
 
       <div className="flex min-w-0 flex-1 flex-col">
-        <header className="flex items-center gap-3 border-b border-line bg-white px-4 py-3 lg:hidden">
+        <header className="flex items-center gap-3 border-b border-line bg-white px-4 py-2 lg:hidden">
           <button
             ref={menuButtonRef}
             type="button"
@@ -145,7 +145,7 @@ export default function App({ client = defaultClient }: { client?: ChatClient })
         </header>
 
         <main id="main" tabIndex={-1} className="flex-1 overflow-y-auto focus:outline-none">
-          <div className="mx-auto max-w-3xl space-y-6 px-4 py-6 sm:px-6 sm:py-10">
+          <div className="mx-auto max-w-3xl space-y-4 px-4 py-4 sm:px-6 sm:py-5">
             {view === "about" ? (
               <About />
             ) : (
@@ -157,7 +157,7 @@ export default function App({ client = defaultClient }: { client?: ChatClient })
                   <Welcome onAsk={ask} disabled={pending} />
                 ) : (
                   <>
-                    <h1 className="sr-only">Conversation with QueryMate</h1>
+                    <h1 className="sr-only">Conversation with HealthChat AI</h1>
                     <MessageList entries={entries} pending={pending} />
                   </>
                 )}

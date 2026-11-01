@@ -1,4 +1,4 @@
-"""Run the mock-only QueryMate API locally (D-19, docs/API_CONTRACT.md).
+"""Run the mock-only HealthChat AI API locally (D-19, docs/API_CONTRACT.md).
 
 Usage (from the project root):
     .venv\\Scripts\\python.exe scripts\\run_api.py

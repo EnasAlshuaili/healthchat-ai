@@ -1,34 +1,35 @@
-"""Static interface copy for the QueryMate UI (see docs/06_UI_UX_Design.md §4)."""
+"""Static interface copy for the HealthChat AI UI (see docs/06_UI_UX_Design.md §4)."""
 
-APP_NAME = "QueryMate"
-TAGLINE = "General healthcare information"
+APP_NAME = "HealthChat AI"
+DESCRIPTION = "Educational Healthcare Q&A Chatbot"
+TAGLINE = "Your AI Assistant for General Health Education."
 
 # Verbatim from docs/06_UI_UX_Design.md §2 "Disclaimer".
 DISCLAIMER = (
-    "QueryMate provides general health information and is not a substitute for "
+    "HealthChat AI provides general health information and is not a substitute for "
     "professional medical advice, diagnosis, or treatment. If you think you may be "
     "experiencing an emergency, contact local emergency services immediately."
 )
 
 # Generic emergency wording only (D-07).
 SAFETY_NOTICE = (
-    "Do not use QueryMate for emergencies. If you think you or someone else may be "
+    "Do not use HealthChat AI for emergencies. If you think you or someone else may be "
     "in immediate danger, contact your local emergency services."
 )
 
 PROTOTYPE_NOTICE = (
-    "QueryMate is a solo educational prototype. It is not a doctor, does not diagnose "
+    "HealthChat AI is a solo educational prototype. It is not a doctor, does not diagnose "
     "or prescribe, and has not been clinically reviewed or validated."
 )
 
 MOCK_NOTICE = (
-    "**UI preview:** QueryMate is not yet connected to its answer system. "
+    "**UI preview:** HealthChat AI is not yet connected to its answer system. "
     "Every reply in this preview is a labelled mock placeholder and contains no "
     "medical information."
 )
 
 WELCOME = (
-    "I'm QueryMate, an educational assistant for general healthcare information. "
+    "I'm HealthChat AI, an educational assistant for general healthcare information. "
     "What would you like to learn about today?"
 )
 
@@ -61,6 +62,6 @@ FEATURES = (
     (
         ":material/fact_check:",
         "Honest about limits",
-        "When no reviewed content fits, QueryMate says so instead of guessing.",
+        "When no reviewed content fits, HealthChat AI says so instead of guessing.",
     ),
 )

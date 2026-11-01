@@ -19,7 +19,10 @@ from querymate.safety import Route, RouteDecision
 from querymate.ui.content import DISCLAIMER
 
 CONTRACT = (config.PROJECT_ROOT / "docs" / "API_CONTRACT.md").read_text(encoding="utf-8")
-REVIEW = (config.PROJECT_ROOT / "docs" / "STEP3_DECISION_REVIEW.md").read_text(encoding="utf-8")
+# Historical record, not rewritten: it keeps the old product name (D-22), the only permitted difference.
+REVIEW = (config.PROJECT_ROOT / "docs" / "STEP3_DECISION_REVIEW.md").read_text(encoding="utf-8").replace(
+    "QueryMate", "HealthChat AI"
+)
 MARKER = "ZZQ-MARKER-7f3a"
 
 # Real router inputs for each route (the same style as tests/test_safety.py).

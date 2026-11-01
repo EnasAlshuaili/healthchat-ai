@@ -1,4 +1,4 @@
-"""Deterministic technical cleaning of the QueryMate dataset.
+"""Deterministic technical cleaning of the HealthChat AI dataset.
 
 Principles (see docs/DECISIONS.md D-01, D-08):
 - The original CSV is never modified; every processed row keeps its source row index

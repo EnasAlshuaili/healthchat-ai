@@ -1,8 +1,8 @@
 {
-  "name": "querymate-frontend",
+  "name": "healthchat-ai-frontend",
   "private": true,
   "version": "0.1.0",
-  "description": "QueryMate React frontend (FastAPI client, contract v0.3, D-19, D-21). Educational prototype; not medical advice.",
+  "description": "HealthChat AI React frontend (FastAPI client, contract v0.3, D-19, D-21). Educational prototype; not medical advice.",
   "type": "module",
   "scripts": {
     "dev": "vite",

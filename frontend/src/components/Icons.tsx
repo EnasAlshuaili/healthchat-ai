@@ -119,7 +119,7 @@ export const SchoolIcon = (p: IconProps) => (
   </Svg>
 );
 
-/** QueryMate mark: same shape as assets/querymate_icon.svg. */
+/** HealthChat AI mark: same shape as assets/querymate_icon.svg. */
 export const LogoMark = (p: IconProps) => (
   <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false" {...p}>
     <rect x="4" y="4" width="32" height="28" rx="8" fill="#2563EB" />

@@ -24,7 +24,7 @@ const URGENT_KINDS: ReadonlySet<ChatResponse["kind"]> = new Set(["emergency", "c
 
 function AssistantAvatar() {
   return (
-    <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-tint text-primary ring-1 ring-line">
+    <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-tint text-primary ring-1 ring-line">
       <BotIcon className="size-5" />
     </span>
   );
@@ -32,12 +32,12 @@ function AssistantAvatar() {
 
 function UserBubble({ text }: { text: string }) {
   return (
-    <div className="flex items-start justify-end gap-3">
-      <div className="max-w-[85%] rounded-2xl rounded-tr-md bg-primary px-4 py-2.5 text-white shadow-sm">
+    <div className="flex items-start justify-end gap-2">
+      <div className="max-w-[85%] rounded-2xl rounded-tr-md bg-primary px-4 py-2 text-white shadow-sm">
         <span className="sr-only">You asked: </span>
         <p className="whitespace-pre-wrap break-words text-sm leading-relaxed">{text}</p>
       </div>
-      <span className="hidden size-9 shrink-0 items-center justify-center rounded-full bg-tint-strong text-primary-strong sm:flex">
+      <span className="hidden size-8 shrink-0 items-center justify-center rounded-full bg-tint-strong text-primary-strong sm:flex">
         <UserIcon className="size-5" />
       </span>
     </div>
@@ -79,12 +79,12 @@ function Sources({ sources }: { sources: readonly Source[] }) {
  */
 function UrgentBubble({ message }: { message: ReplyMessage }) {
   return (
-    <div className="flex items-start gap-3">
+    <div className="flex items-start gap-2">
       <AssistantAvatar />
       <article
-        aria-label="QueryMate reply"
+        aria-label="HealthChat AI reply"
         data-urgent="true"
-        className="min-w-0 max-w-[85%] rounded-2xl rounded-tl-md border-2 border-red-400 bg-red-50 p-4 text-red-950 shadow-sm"
+        className="min-w-0 rounded-2xl rounded-tl-md border-2 border-red-400 bg-red-50 px-4 py-3 text-red-950 shadow-sm sm:max-w-[85%]"
       >
         <div role="alert">
           <h2 className="flex items-start gap-2 text-base font-bold">
@@ -115,11 +115,11 @@ function ReplyBubble({
   sources?: readonly Source[];
 }) {
   return (
-    <div className="flex items-start gap-3">
+    <div className="flex items-start gap-2">
       <AssistantAvatar />
       <article
-        aria-label="QueryMate reply"
-        className={`min-w-0 max-w-[85%] rounded-2xl rounded-tl-md border p-4 shadow-sm ${
+        aria-label="HealthChat AI reply"
+        className={`min-w-0 rounded-2xl rounded-tl-md border px-4 py-3 shadow-sm sm:max-w-[85%] ${
           invalid ? "border-amber-300 bg-amber-50 text-amber-950" : "border-line bg-white"
         }`}
       >
@@ -155,11 +155,11 @@ const fallbackMessage: ReplyMessage = {
 
 function ErrorBubble({ state }: { state: ErrorState }) {
   return (
-    <div className="flex items-start gap-3">
+    <div className="flex items-start gap-2">
       <AssistantAvatar />
       <div
         role="alert"
-        className="max-w-[85%] rounded-2xl rounded-tl-md border border-red-300 bg-red-50 p-4 text-sm text-red-900"
+        className="min-w-0 rounded-2xl rounded-tl-md border border-red-300 bg-red-50 px-4 py-3 text-sm text-red-900 sm:max-w-[85%]"
       >
         <p className="flex items-center gap-2 font-semibold">
           <AlertIcon className="size-4 text-red-700" />
@@ -173,11 +173,11 @@ function ErrorBubble({ state }: { state: ErrorState }) {
 
 export function LoadingBubble() {
   return (
-    <div className="flex items-start gap-3">
+    <div className="flex items-start gap-2">
       <AssistantAvatar />
       <div
         role="status"
-        className="flex items-center gap-3 rounded-2xl rounded-tl-md border border-line bg-white px-4 py-3 text-sm text-muted shadow-sm"
+        className="flex items-center gap-3 rounded-2xl rounded-tl-md border border-line bg-white px-4 py-2 text-sm text-muted shadow-sm"
       >
         <span className="flex gap-1" aria-hidden="true">
           {[0, 150, 300].map((delay) => (
@@ -196,7 +196,7 @@ export function LoadingBubble() {
 
 export function MessageList({ entries, pending }: { entries: Entry[]; pending: boolean }) {
   return (
-    <ol aria-label="Conversation" className="space-y-6">
+    <ol aria-label="Conversation" className="space-y-3">
       {entries.map((entry) => (
         <li key={entry.id}>
           {entry.role === "user" && <UserBubble text={entry.text} />}

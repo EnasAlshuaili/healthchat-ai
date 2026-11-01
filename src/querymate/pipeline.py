@@ -73,8 +73,8 @@ EMERGENCY_LINE = (
 
 _EMERGENCY_PARAGRAPHS = (
     "If you or someone else may be in immediate danger, contact local emergency services immediately.",
-    "QueryMate is an educational prototype and cannot provide crisis intervention or assess immediate "
-    "safety. Do not wait for a response from QueryMate if urgent help may be needed.",
+    "HealthChat AI is an educational prototype and cannot provide crisis intervention or assess immediate "
+    "safety. Do not wait for a response from HealthChat AI if urgent help may be needed.",
 )
 
 _CRISIS_SUPPORT = (
@@ -89,9 +89,9 @@ TEMPLATES: dict[str, Template] = {
     "crisis": Template("crisis", "Please get help now", _EMERGENCY_PARAGRAPHS + (_CRISIS_SUPPORT,)),
     "decline_diagnosis": Template(
         "decline_diagnosis",
-        "QueryMate can't diagnose",
+        "HealthChat AI can't diagnose",
         (
-            "QueryMate is an educational prototype and cannot diagnose conditions or say what may be "
+            "HealthChat AI is an educational prototype and cannot diagnose conditions or say what may be "
             "causing symptoms.",
             "Please talk to a doctor or another qualified healthcare professional, who can assess your "
             "situation. If symptoms are severe, getting worse, or worrying you, seek professional care.",
@@ -100,9 +100,9 @@ TEMPLATES: dict[str, Template] = {
     ),
     "decline_dosage": Template(
         "decline_dosage",
-        "QueryMate can't advise on medicines or doses",
+        "HealthChat AI can't advise on medicines or doses",
         (
-            "QueryMate is an educational prototype and cannot recommend medicines, suggest doses, or "
+            "HealthChat AI is an educational prototype and cannot recommend medicines, suggest doses, or "
             "advise on starting, stopping, changing, or combining medicines.",
             "For questions about medicines, please ask a pharmacist, your prescriber, or another qualified "
             "healthcare professional, or check the official information leaflet that comes with the medicine.",
@@ -111,9 +111,9 @@ TEMPLATES: dict[str, Template] = {
     ),
     "out_of_scope": Template(
         "out_of_scope",
-        "This question is outside what QueryMate covers",
+        "This question is outside what HealthChat AI covers",
         (
-            "QueryMate only provides general educational information about human health topics, so it "
+            "HealthChat AI only provides general educational information about human health topics, so it "
             "can't help with this question.",
             "Please try a general health question, or ask a suitable professional or service about this topic.",
             EMERGENCY_LINE,
@@ -121,7 +121,7 @@ TEMPLATES: dict[str, Template] = {
     ),
     "safe_fallback": Template(
         "safe_fallback",
-        "QueryMate can't answer this safely",
+        "HealthChat AI can't answer this safely",
         (
             # 06_UI_UX_Design §4 low-confidence wording.
             "I couldn't find enough reliable information to answer this safely. Please rephrase your "
@@ -143,7 +143,7 @@ TEMPLATES: dict[str, Template] = {
         "mock_answer",
         "Mock response: answers are not available yet",
         (
-            "This is a placeholder. QueryMate's answer system is not connected, so your question has not "
+            "This is a placeholder. HealthChat AI's answer system is not connected, so your question has not "
             "been checked or answered.",
             "For health concerns, please consult a qualified healthcare professional. " + EMERGENCY_LINE,
         ),

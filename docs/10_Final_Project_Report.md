@@ -1,10 +1,10 @@
 # Final Project Report
-## QueryMate: AI Healthcare Question Answering Chatbot
+## HealthChat AI: Educational Healthcare Q&A Chatbot
 
 > **Template:** Complete only after implementation and evaluation. Replace all prompts/placeholders with actual project evidence. Do not invent results.
 
 ## Title page
-- Project title: QueryMate — AI Healthcare Question Answering Chatbot
+- Project title: HealthChat AI — Educational Healthcare Q&A Chatbot
 - Student/team:
 - Institution/course:
 - Supervisor:

@@ -19,7 +19,7 @@ Decision **D-15** in `docs/DECISIONS.md`.
 
 ## Curated answers
 
-`topic_content.json` holds the only answer text QueryMate can display. It has one entry, `KN-0001` (hydration, `TOP-001`), knowledge version `0.1.0`. It was written from CDC and NHS pages and contains no dataset text.
+`topic_content.json` holds the only answer text HealthChat AI can display. It has one entry, `KN-0001` (hydration, `TOP-001`), knowledge version `0.1.0`. It was written from CDC and NHS pages and contains no dataset text.
 
 - **Review.** `owner_reviewed` means the project owner reviewed the answer and its source mapping (2026-10-31). This is owner review of educational content only: **not** clinical review or medical validation. `clinical_review` must stay `not_clinically_reviewed`, or the file is rejected.
 - **Display.** Only `owner_reviewed` entries can be displayed. A `pending_owner_review` entry loads but is never returned.

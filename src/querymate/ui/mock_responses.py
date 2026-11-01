@@ -44,7 +44,7 @@ _REPLIES = {
         kind=ReplyKind.PLACEHOLDER,
         title="Mock response: answers are not available yet",
         paragraphs=(
-            "This is a placeholder. QueryMate's answer system is not connected to "
+            "This is a placeholder. HealthChat AI's answer system is not connected to "
             "this preview, so your question has not been read, checked, or answered.",
             "For health concerns, please consult a qualified healthcare professional. "
             + EMERGENCY_LINE,
@@ -54,7 +54,7 @@ _REPLIES = {
         kind=ReplyKind.FALLBACK,
         title="Mock response: no relevant answer (preview)",
         paragraphs=(
-            "This previews how QueryMate will respond when it cannot find reviewed "
+            "This previews how HealthChat AI will respond when it cannot find reviewed "
             "information that fits a question.",
             "“I couldn’t find enough reliable information to answer this safely. "
             "Please rephrase your question or consult a qualified healthcare "
