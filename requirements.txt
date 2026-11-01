@@ -8,3 +8,11 @@ joblib==1.6.0
 pyarrow==25.0.1
 streamlit==1.65.0
 pytest==9.1.1
+# Mock-only API (D-19), added 2026-10-20. fastapi 0.150.0 requires starlette>=0.46.0, so it
+# uses the starlette/uvicorn versions Streamlit already installed; nothing was upgraded.
+fastapi==0.150.0
+pydantic==2.14.1
+starlette==1.8.0
+uvicorn==0.54.0
+# Test-only: required by FastAPI/Starlette TestClient.
+httpx==0.28.1

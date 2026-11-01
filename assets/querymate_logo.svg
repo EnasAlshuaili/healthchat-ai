@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="196" height="40" viewBox="0 0 196 40" role="img" aria-label="QueryMate">
+  <rect x="2" y="4" width="32" height="28" rx="8" fill="#2563EB"/>
+  <path d="M10 32 L10 38 L17 32 Z" fill="#2563EB"/>
+  <rect x="16" y="10" width="4" height="16" rx="1.5" fill="#FFFFFF"/>
+  <rect x="10" y="16" width="16" height="4" rx="1.5" fill="#FFFFFF"/>
+  <text x="44" y="27" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#2563EB">QueryMate</text>
+</svg>

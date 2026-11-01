@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* QueryMate palette: same values as .streamlit/config.toml (blue-and-white identity).
+   System font stack only: nothing is loaded from external font services. */
+@theme {
+  --color-primary: #2563eb;
+  --color-primary-strong: #1d4ed8;
+  --color-ink: #08122a;
+  --color-muted: #475569;
+  --color-surface: #f5f8ff;
+  --color-tint: #eef4ff;
+  --color-tint-strong: #e6eefc;
+  --color-line: #d6e2f5;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}

@@ -19,6 +19,8 @@ data/index/*
 *.npz
 # Explicitly allow hand-written evaluation sets (contain no dataset content)
 !eval/*.csv
+# Allow the hand-written curated topic catalogue (contains no dataset content, D-15)
+!curated/*.csv
 
 # Original documentation archive (kept unchanged, duplicate of docs/)
 *.zip
@@ -48,3 +50,7 @@ Thumbs.db
 desktop.ini
 .vscode/
 .idea/
+
+# --- Frontend (D-19) ---
+frontend/node_modules/
+frontend/dist/

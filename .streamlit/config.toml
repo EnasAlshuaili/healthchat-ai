@@ -1,0 +1,36 @@
+# QueryMate theme: blue-and-white palette from "QueryMate Healthcare UI Dashboard.png".
+# System sans-serif font so no fonts are fetched from external services.
+
+[browser]
+# Keep everything local: no usage statistics are sent to Streamlit (README "Privacy").
+gatherUsageStats = false
+
+[server]
+# Local-only prototype: not reachable from other devices on the network (D-08).
+address = "localhost"
+
+[client]
+toolbarMode = "minimal"
+
+[theme]
+base = "light"
+primaryColor = "#2563EB"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#EEF4FF"
+# Dark enough that captions (drawn at 60% opacity) stay >= 4.5:1 on every background (WCAG AA).
+textColor = "#08122A"
+borderColor = "#D6E2F5"
+linkColor = "#1D4ED8"
+font = "sans-serif"
+headingFontWeights = [700, 600, 600, 600, 600, 600]
+baseRadius = "12px"
+buttonRadius = "10px"
+showWidgetBorder = true
+showSidebarBorder = true
+blueColor = "#2563EB"
+redColor = "#C62828"
+
+[theme.sidebar]
+backgroundColor = "#F5F8FF"
+secondaryBackgroundColor = "#E6EEFC"
+borderColor = "#D6E2F5"

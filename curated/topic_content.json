@@ -1,0 +1,117 @@
+{
+  "knowledge_version": "0.1.0",
+  "entries": [
+    {
+      "entry_id": "KN-0001",
+      "topic_id": "TOP-001",
+      "title": "Why staying hydrated matters",
+      "paragraphs": [
+        "Water helps your body keep a normal temperature, lubricates and cushions your joints, and helps get rid of waste through urination, sweating, and bowel movements.",
+        "Not getting enough fluid can lead to dehydration.",
+        "You may need more fluid in hot weather, during physical activity, or when you are ill. Recommended daily water intake varies, for example by age, sex, and activity level.",
+        "This is general educational content reviewed by the project owner. It has not been clinically reviewed or clinically validated. For personal advice, consult a qualified healthcare professional. If you think you may be experiencing an emergency, contact local emergency services immediately."
+      ],
+      "approved_questions": [
+        "Why is staying hydrated important?",
+        "Why is hydration important?",
+        "Why is it important to stay hydrated?",
+        "Why is staying hydrated important for the body?",
+        "Why does the body need water?",
+        "Why do we need to drink water?"
+      ],
+      "review": {
+        "review_status": "owner_reviewed",
+        "clinical_review": "not_clinically_reviewed",
+        "reviewer": "project owner",
+        "reviewed_on": "2026-10-31",
+        "note": "Owner review of educational content only. Not clinical review or medical validation."
+      },
+      "sources": [
+        {
+          "source_id": "cdc_water",
+          "title": "About Water and Healthier Drinks",
+          "organization": "Centers for Disease Control and Prevention (CDC)",
+          "url": "https://www.cdc.gov/healthy-weight-growth/water-healthy-drinks/",
+          "page_date": "2026-03-05",
+          "last_reviewed": null,
+          "next_review_due": null,
+          "checked_on": "2026-10-31",
+          "review_overdue_when_checked": false,
+          "how_checked": "Assistant read the Internet Archive copy of 2026-10-04 because the live page refused automated download. The project owner confirmed the current live page."
+        },
+        {
+          "source_id": "nhs_water",
+          "title": "Water, drinks and hydration",
+          "organization": "NHS",
+          "url": "https://www.nhs.uk/Live-well/eat-well/food-guidelines-and-food-labels/water-drinks-nutrition/",
+          "page_date": null,
+          "last_reviewed": "2023-05-17",
+          "next_review_due": "2026-05-17",
+          "checked_on": "2026-10-31",
+          "review_overdue_when_checked": true,
+          "how_checked": "Assistant read the live page. Its printed next-review date had passed when checked."
+        },
+        {
+          "source_id": "nhs_dehydration",
+          "title": "Dehydration",
+          "organization": "NHS",
+          "url": "https://www.nhs.uk/conditions/dehydration/",
+          "page_date": null,
+          "last_reviewed": "2026-05-01",
+          "next_review_due": "2029-05-01",
+          "checked_on": "2026-10-31",
+          "review_overdue_when_checked": false,
+          "how_checked": "Assistant read the live page."
+        }
+      ],
+      "statements": [
+        {
+          "text": "Why staying hydrated matters",
+          "evidence": [
+            {"source_id": "cdc_water", "section": "Benefits of drinking water", "quote": "Getting enough water every day is important for health."}
+          ]
+        },
+        {
+          "text": "Water helps your body keep a normal temperature",
+          "evidence": [
+            {"source_id": "cdc_water", "section": "Water helps your body", "quote": "Keep a normal temperature."}
+          ]
+        },
+        {
+          "text": "lubricates and cushions your joints",
+          "evidence": [
+            {"source_id": "cdc_water", "section": "Water helps your body", "quote": "Lubricate and cushion joints."}
+          ]
+        },
+        {
+          "text": "helps get rid of waste through urination, sweating, and bowel movements",
+          "evidence": [
+            {"source_id": "cdc_water", "section": "Water helps your body", "quote": "Get rid of waste through urination, perspiration, and bowel movements."}
+          ]
+        },
+        {
+          "text": "Not getting enough fluid can lead to dehydration",
+          "evidence": [
+            {"source_id": "nhs_water", "section": "Introduction", "quote": "Not getting enough fluids can lead to dehydration."},
+            {"source_id": "nhs_dehydration", "section": "Introduction", "quote": "Dehydration means your body loses more fluids than you take in."},
+            {"source_id": "cdc_water", "section": "Benefits of drinking water", "quote": "Drinking water can prevent dehydration"}
+          ]
+        },
+        {
+          "text": "You may need more fluid in hot weather, during physical activity, or when you are ill",
+          "evidence": [
+            {"source_id": "nhs_water", "section": "Daily fluid intake", "quote": "you may need to drink more fluids if you're: ... in a hot environment; physically active for long periods; ill or recovering from illness"},
+            {"source_id": "cdc_water", "section": "Your body needs more water when you are", "quote": "In hot climates. More physically active. Running a fever. Having diarrhea or vomiting."},
+            {"source_id": "nhs_dehydration", "section": "How to reduce the risk of dehydration", "quote": "Drink more when there's a higher risk of dehydrating. For example, if you're being sick, sweating due to hot weather or exercise, or you have diarrhoea."}
+          ]
+        },
+        {
+          "text": "Recommended daily water intake varies, for example by age, sex, and activity level",
+          "evidence": [
+            {"source_id": "cdc_water", "section": "Meeting your water intake every day", "quote": "Daily water intake recommendations vary by age, sex, pregnancy status, activity level, and breastfeeding status."}
+          ]
+        }
+      ]
+    }
+  ]
+}
